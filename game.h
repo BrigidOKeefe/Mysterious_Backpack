@@ -7,7 +7,7 @@
 //backpack structure
 struct backpack
 {
-   char item1, item2, item3;
+   char *item1, *item2, *item3;
 };
 
 
