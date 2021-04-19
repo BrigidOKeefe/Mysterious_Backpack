@@ -1,5 +1,5 @@
 # Makefile
-# Enter file names here
+# makefile for final project
 # Brigid O'Keefe
 
 
