@@ -10,6 +10,8 @@ struct backpack
    char *item1, *item2, *item3;
 };
 
+//function to create random number
+int rand_in_range(int x, int y); 
 
 
 #endif
