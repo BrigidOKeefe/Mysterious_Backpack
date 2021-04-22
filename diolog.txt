@@ -1,0 +1,20 @@
+
+
+1 OPEN SCENE: 
+
+The forest is dark. You open your eyes to a grey sky cut by black bran
+How did you get here ... and is that, a backpack?
+
+There's a dark black backpack at your feet, and it has your name on it. 
+
+You open the bag and look inside. Inside you see some items: %s, %s, %s. 
+You don't know where you are, you don't know how you got here, but maybe you can use these items to get you out. 
+
+2 FOREST SCENE:
+
+
+
+3 CAMPFIRE:
+
+
+
