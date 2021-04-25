@@ -22,8 +22,20 @@ while(option)
    
       case(1):
       {
-         int num = rand_in_range(0, 4);
-         printf("%d", num);
+         //create backpack
+         struct backpack bag = new_bag();
+         printf("%s\n", bag.item1);
+         printf("%s\n", bag.item2);
+         printf("%s\n", bag.item3);
+
+
+
+         //scene one 
+         
+         //scene two
+         
+         //scene three
+
          break;
       }
       
