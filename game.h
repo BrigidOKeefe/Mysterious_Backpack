@@ -20,6 +20,7 @@ int rand_in_range(int x, int y);
 //function to create a random list of numbers that doesn't repeat
 int* rand_list(int *list, int length, int x, int y);
 
-
+//print items in bag, and let the user pick an item to use. 
+int use_item(struct backpack bag, int choice);
 
 #endif
