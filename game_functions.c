@@ -17,13 +17,13 @@ struct backpack new_bag()
    char *items_3[] = {"Keys", "Pistol", "Rock", "Glass_Bottle", "Cell_Phone", "Radio", "Picture_Frame", "Stick", "Newspaper"};
    
    
-   bag.item1 = items_1[rand_in_range(0, 9)];
+   bag.item1 = items_1[rand_in_range(0, 8)];
    printf("Item 1:\t%s\n", bag.item1);
  
-   bag.item2 = items_2[rand_in_range(0, 9)];
+   bag.item2 = items_2[rand_in_range(0, 8)];
    printf("Item 2:\t%s\n", bag.item2);
    
-   bag.item3 = items_3[rand_in_range(0, 9)]; 
+   bag.item3 = items_3[rand_in_range(0, 8)]; 
    printf("Item 3:\t%s\n", bag.item3);
    
    
