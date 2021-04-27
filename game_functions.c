@@ -12,21 +12,14 @@ struct backpack new_bag()
    struct backpack bag; 
    
    //list of possible items
-   char *items_1[] = {"Knife", "Water", "Flint", "Mirror", "Journal", "First-Aid_Kit", "Flashlight", "Rope", "Food"};
-   char *items_2[] = {"Tent", "Fishing_Hook", "Lighter", "Pen", "Blanket", "Pop_Can", "Map", "Compass", "Tarp"};
-   char *items_3[] = {"Keys", "Pistol", "Rock", "Glass_Bottle", "Cell_Phone", "Radio", "Picture_Frame", "Stick", "Newspaper"};
+   char *items_1[] = {"Knife", "Water", "Flint", "Mirror", "Journal", "First-Aid Kit", "Flashlight", "Rope", "Food"};
+   char *items_2[] = {"Tent", "Fishing Hook", "Lighter", "Pen","Blanket", "Pop Can", "Map","Compass","Tarp" };
+   char *items_3[] = {"Keys","Pistol","Rock","Glass Bottle","Cell Phone","Radio","Picture Frame","Stick","Newspaper"};
    
    
-   bag.item1 = items_1[rand_in_range(0, 8)];
-   printf("Item 1:\t%s\n", bag.item1);
- 
-   bag.item2 = items_2[rand_in_range(0, 8)];
-   printf("Item 2:\t%s\n", bag.item2);
-   
-   bag.item3 = items_3[rand_in_range(0, 8)]; 
-   printf("Item 3:\t%s\n", bag.item3);
-   
-   
+   bag.item1 = items_1[rand_in_range(0, 9)];
+   bag.item2 = items_2[rand_in_range(0, 9)];
+   bag.item3 = items_3[rand_in_range(0, 9)]; 
    
    return bag; 
 }
@@ -54,19 +47,10 @@ int* rand_list(int *list, int length, int x, int y)
   
   }
   return list;
+
 }
 
-//print items in bag, and let the user pick an item to use to get to the next part of the story
-int use_item(struct backpack bag, int choice)
-{
-  //print items
-   printf("Item 1:\t%s\n", bag.item1);
-   printf("Item 2:\t%s\n", bag.item2);
-   printf("Item 3:\t%s\n", bag.item3);
-   
-   //ask the user to select an item
-   
-   
-   //return selection
-   
-}
+//function to find next section of text separated by * 
+
+//function to print section of text separated by given character
+//int print_section(FILE ){}

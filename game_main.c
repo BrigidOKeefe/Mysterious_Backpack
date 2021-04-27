@@ -6,73 +6,66 @@
 #include <time.h>
 #include "game.h"
 
-
 int main(){
-
-printf("The Mysterious Backpack \n\tGame By Brigid O'Keefe\n\n");
-
-//load diolog file, and create text buffer
-FILE *text;
-text = fopen("/Mysterious_Backpack-main/diolog.txt", "r");
-char *buff;
-
-
-int option = 1;
-
-while(option)
-{
-   printf("\nMAIN MENU:\n1.Play Game\n0.Exit\nSelect an option:  ");
-   scanf("%d",&option);
    
-   switch(option)
-   {
+   FILE *fptr;//file pointer
+   char c;
    
-      case(1):
+   // Open file
+   fptr = fopen("diolog.txt", "r");
+   if (fptr == NULL)
+    {
+      printf("Error loading text files. \n");
+      exit(0);
+    }
+    
+   else
+    {
+      printf("The Mysterious Backpack \n\tGame By Brigid O'Keefe\n\n");
+   
+      int option = 1;
+   
+      while(option)
       {
+          printf("\nMAIN MENU:\n1.Play Game\n0.Exit\nSelect an option:  ");
+          scanf("%d",&option);
       
-         //intro dialog
-         fscanf(text, "%[^\n]", &buff);
-         printf("\n%s\n", buff);
+         switch(option)
+         {
          
-         //create backpack
-         struct backpack bag = new_bag();
-        // use_item(bag, 1);
-         
-         
-         //scene one 
-         
-         //ask for response
-         
-         //scene two
-         
-         //player response
-         
-         //scene three
-         
-         //player response
-         
-         //ending text.
+            case(1):
+            {
+               // Read contents from file
+               c = fgetc(fptr);
+               while (c != '*')
+                {
+                    printf ("%c", c);
+                    c = fgetc(fptr);
+                }
+    
 
-         break;
+               //create backpack
+               struct backpack bag = new_bag();
+               printf("%s\n", bag.item1);
+               printf("%s\n", bag.item2);
+               printf("%s\n", bag.item3);
+   
+               //scene one 
+               
+               //scene two
+               
+               //scene three
+      
+               break;
+            }
+            
+            case(0):
+            {
+               return option;
+            }  
+         }
+      
+      
       }
-      
-      //exit game
-      case(0):
-      {
-         fclose(text);
-         return option;
-      }  
-      //invalid response
-      default:
-      {
-         printf("Please enter a vaild number...");
-      } 
-      
-   }
-
-
-}
-
-
-
+    }
 }
