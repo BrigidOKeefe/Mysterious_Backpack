@@ -1,17 +1,18 @@
-"The forest is dark. You open your eyes to a grey sky cut by black branches. How did you get here ... and is that, a backpack?There's a dark black backpack at your feet, and it has your name on it. 
-You open the bag and look inside. Inside you see some items: 
+The forest is dark. You open your eyes to a grey sky cut by black bran
+How did you get here ... and is that, a backpack?
 
+There's a dark black backpack at your feet, and it has your name on it. 
 
+You open the bag and look inside. Inside you see some items:
+*
 You don't know where you are, you don't know how you got here, but maybe you can use these items to get you out. 
 
+*
+You 
 
-2 Path Scene:
-" With the *** in hand, you set off down what looks like a forest trail. 
-It might be a deer path, but one way or another it should lead you out of the woods.
-Eventually you come to a small muddy stream. You feel your stomach growling.
-"
+
 
 3 CAMPFIRE:
 
-"
+
 
