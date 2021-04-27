@@ -20,6 +20,6 @@ int rand_in_range(int x, int y);
 //function to create a random list of numbers that doesn't repeat
 int* rand_list(int *list, int length, int x, int y);
 
-
+void print_section(FILE *fptr);
 
 #endif

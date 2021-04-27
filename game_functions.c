@@ -52,5 +52,15 @@ int* rand_list(int *list, int length, int x, int y)
 
 //function to find next section of text separated by * 
 
-//function to print section of text separated by given character
-//int print_section(FILE ){}
+//function to print section of text separated by *
+void print_section(FILE *fptr)
+{
+  
+   char c = fgetc(fptr);
+   while ((c != '*')|| (c != EOF))
+   {
+      printf ("%c", c);
+      c = fgetc(fptr);
+   }
+
+}

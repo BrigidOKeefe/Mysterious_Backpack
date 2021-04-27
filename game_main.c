@@ -35,27 +35,24 @@ int main(){
          
             case(1):
             {
-               // Read contents from file
-               c = fgetc(fptr);
-               while (c != '*')
-                {
-                    printf ("%c", c);
-                    c = fgetc(fptr);
-                }
-    
+               //Intro text:
+               print_section(fptr);
 
                //create backpack
                struct backpack bag = new_bag();
-               printf("%s\n", bag.item1);
-               printf("%s\n", bag.item2);
-               printf("%s\n", bag.item3);
-   
-               //scene one 
+               printf("1.%s\n", bag.item1);
+               printf("2.%s\n", bag.item2);
+               printf("3.%s\n", bag.item3);
                
-               //scene two
+               //prompt option for next item              
+               print_section(fptr);
                
-               //scene three
-      
+               //repeat prompt until right item choosen. 
+               
+                //next scene
+
+               
+               //reset file pointer. 
                break;
             }
             
