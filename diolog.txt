@@ -1,18 +1,53 @@
+
+
+
 The forest is dark. You open your eyes to a grey sky cut by black bran
 How did you get here ... and is that, a backpack?
 
-There's a dark black backpack at your feet, and it has your name on it. 
+There's a dark black backpack at your feet, it's old and warn. The name tag on the front is scratched out. 
 
 You open the bag and look inside. Inside you see some items:
 *
-You don't know where you are, you don't know how you got here, but maybe you can use these items to get you out. 
 
-*
-You 
+You don't know where you are, but maybe something in here can help you get your bearings. 
+Select an item: *
+
+You pick up the * and examine it. This would be more helpful if you knew where you needed to go, 
+but after a while of looking at the surounding area, you decide to head south along a deer trail.
+You keep an eye on the * as you go, and eventually you find a clearing with a stream running through it.
+You feel a rumble in your stomach - What are you going to use to get food? 
+Select an item: *
+
+Given how you've never used a * before, it takes a few hours. But using the * 
+and some of the branches around you, you manage to catch something to eat.
+Well, if you feel like eating raw meat that is. 
+How are you planning on cooking that?
+Select an item: *
+
+You spend the next hour or so gathering wood. The shadows lenghten around you, and in the trees you swear 
+you a pair of eyes staring back at you. 
+
+...
+
+
+...
+
+As quickly as they appeared, they're gone.You hurry back to your campsite with your branches to work on a fire.
+Spooked, you almost drop your * a few times while trying to get the tinder lit. 
+Eventually, you find yourself with a roaring fire and a sizzling dinner. You stare up into the night sky
+and examine the *. On the handle, you find the letters:
+
+"dQw4w9WgXcQ"
+
+What could it mean? 
 
 
 
-3 CAMPFIRE:
 
-*
+TO BE CONTINUED
+
+
+
+
+
 **
