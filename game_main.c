@@ -6,8 +6,8 @@
 #include <time.h>
 #include "game.h"
 
-int main(){
-   
+int main()
+{
    FILE *fptr;//file pointer
    char c;
    
@@ -36,23 +36,30 @@ int main(){
             case(1):
             {
                //Intro text:
+               fseek(fptr, 0, SEEK_SET);
                print_section(fptr);
 
                //create backpack
                struct backpack bag = new_bag();
+               
+               
+               //print bag items
                printf("1.%s\n", bag.item1);
                printf("2.%s\n", bag.item2);
                printf("3.%s\n", bag.item3);
                
-               //prompt option for next item              
+               //scene one           
                print_section(fptr);
-               
-               //repeat prompt until right item choosen. 
-               
-                //next scene
-
-               
-               //reset file pointer. 
+               pick_item(2);              
+               print_scene(fptr,bag.item2);          
+             
+               //scene two
+               pick_item(1);
+               print_scene(fptr,bag.item1);          
+               //scene three
+               pick_item(3);
+               print_scene(fptr,bag.item3); 
+                
                break;
             }
             
@@ -61,8 +68,7 @@ int main(){
                return option;
             }  
          }
-      
-      
+
       }
-    }
+    }  
 }

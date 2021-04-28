@@ -12,14 +12,14 @@ struct backpack new_bag()
    struct backpack bag; 
    
    //list of possible items
-   char *items_1[] = {"Knife", "Water", "Flint", "Mirror", "Journal", "First-Aid Kit", "Flashlight", "Rope", "Food"};
-   char *items_2[] = {"Tent", "Fishing Hook", "Lighter", "Pen","Blanket", "Pop Can", "Map","Compass","Tarp" };
-   char *items_3[] = {"Keys","Pistol","Rock","Glass Bottle","Cell Phone","Radio","Picture Frame","Stick","Newspaper"};
+   char *items_1[] = {"Knife", "Rope", "Fishing Rod"};
+   char *items_2[] = { "Map","Compass","GPS" };
+   char *items_3[] = {"Flint_and_steel", "Magnifying_Glass", "Lighter"};
    
    
-   bag.item1 = items_1[rand_in_range(0, 9)];
-   bag.item2 = items_2[rand_in_range(0, 9)];
-   bag.item3 = items_3[rand_in_range(0, 9)]; 
+   bag.item1 = items_1[rand_in_range(0, 2)];
+   bag.item2 = items_2[rand_in_range(0, 2)];
+   bag.item3 = items_3[rand_in_range(0, 2)]; 
    
    return bag; 
 }
@@ -44,23 +44,43 @@ int* rand_list(int *list, int length, int x, int y)
       new = rand_in_range(x,y);
       //if item is not in list
       *(list+ctr) = new;
-  
   }
   return list;
-
 }
 
-//function to find next section of text separated by * 
 
 //function to print section of text separated by *
 void print_section(FILE *fptr)
 {
-  
    char c = fgetc(fptr);
-   while ((c != '*')|| (c != EOF))
+   while ((c != '*')&&(c != EOF))
    {
       printf ("%c", c);
       c = fgetc(fptr);
    }
+}
 
+//function to print next scene
+void print_scene(FILE *fptr, char *item)
+{
+   print_section(fptr);
+   printf("%s",item);
+   print_section(fptr);
+   printf("%s",item);
+   print_section(fptr);
+}
+
+//function to select next item
+int pick_item(int answer)
+{
+   int usedItem = 0;
+   while (usedItem != answer)
+   {
+      scanf("%d",&usedItem);
+      if(usedItem != answer)
+      {
+         printf("That's not going to help\nSelect an item: ");
+      }
+   }
+ 
 }
